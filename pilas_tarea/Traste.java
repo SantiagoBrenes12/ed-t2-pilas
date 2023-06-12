@@ -32,6 +32,17 @@ public class Traste {
         this.cubiertos = this.cubiertos + cubiertosASumar;
     }
 
+    public boolean tieneCubiertos(){
+        if (this.cubiertos > 0){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    
+    public void quitarCubiertos(){
+        this.setCubiertos(0);
+    }
 }
 
 //
