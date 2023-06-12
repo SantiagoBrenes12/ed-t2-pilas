@@ -32,17 +32,14 @@ public class Pila {
             newNode.setSiguiente(this.cima);
             this.cima = newNode;
             
-            if(valor.tieneCubiertos()){
-                Traste nodoActual = this.cima.getValor();
-                Traste nodoAnterior = this.cima.getSiguiente().getValor();
-                
-                int cubiertosNodoAnterior = nodoAnterior.getCubiertos();
-                nodoAnterior.quitarCubiertos();
-                
-                nodoActual.agregarCubiertos(cubiertosNodoAnterior);
-            }
+            Traste trasteActual = this.cima.getValor();
+            Traste trasteAnterior = this.cima.getSiguiente().getValor();
+
+            int cubiertosTrasteAnterior = trasteAnterior.getCubiertos();
+            trasteAnterior.quitarCubiertos();
+
+            trasteActual.agregarCubiertos(cubiertosTrasteAnterior);
         }
-        
         
         this.largo++;
     }

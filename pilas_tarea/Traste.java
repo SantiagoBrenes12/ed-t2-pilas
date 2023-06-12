@@ -44,30 +44,3 @@ public class Traste {
         this.setCubiertos(0);
     }
 }
-
-//
-//Nodo newNode = new Nodo();
-//        newNode.setValor(valor);
-//
-//        
-//        if (this.Vacia()) {
-//            this.cima = newNode;
-//            this.largo++;
-//            return;
-//        }
-//
-//        if (!valor.esColon()) {
-//            newNode.setSiguiente(this.cima);
-//            this.cima = newNode;
-//            this.largo++;
-//            return;
-//        }
-//        
-//        
-//        
-//        Nodo previousNext = this.cima.getSiguiente();
-//        
-//        this.cima.setSiguiente(newNode);
-//        newNode.setSiguiente(previousNext);
-//        
-//        this.largo++;

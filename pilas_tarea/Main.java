@@ -12,7 +12,6 @@ public class Main {
         pila.push(new Traste("Plato", 3));
         pila.push(new Traste("Vaso", 1));
         pila.push(new Traste("Vaso", 0));
-        pila.push(new Traste("Plato", 6));
 
         pila.listar();
     }
